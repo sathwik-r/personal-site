@@ -20,11 +20,42 @@
             height: 100%
         }
 
+        #myNavbar {
+            background-color: rgb(39, 38, 38)
+        }
+
         /* Set gray background color and 100% height */
         .sidenav {
             padding-top: 20px;
             background-color: #f1f1f1;
             height: 100%;
+        }
+
+        p {
+            font-family: Lato;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-family: Monaco;
+        }
+
+        h2 {
+            font-family: Monaco;
+            font-size: 24px;
+            color: rgb(172, 129, 66);
+        }
+
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: cadetblue;
+        }
+
+        li {
+            font-family: Lato;
+            margin: 10px 0;
+            font-size: 18px;
         }
 
         /* Set black background color, white text and some padding */
@@ -64,9 +95,10 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#about">About</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1PbQVQe5-hid1SBfZEWFe5bUA7ldzHJVI?usp=sharing"
+                            target="_blank">Resume</a></li>
                 </ul>
 
             </div>
@@ -76,44 +108,70 @@
 
     <div class="container-fluid justify-center">
         <div class="row content">
-            <div class="col-sm-2 ">
-                <!-- <p><a href="#">Link</a></p>
-                <p><a href="#">Link</a></p>
-                <p><a href="#">Link</a></p> -->
+            <div class="col-sm-2  d-sm-block ">
+                <img class="d-none d-sm-block" src="assets/me.jpeg" width="200" height="200">
+
             </div>
+            <br>
             <div class="col-sm-8 justify-center">
-                <h1>Welcome</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <hr>
+                <p>Thank you for taking some time to visit my website. Welcome to my website.</p>
 
                 <a id="about">
-                    <h1>About</h1>
+                    <h1>About Me</h1>
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut
-                    aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                    qui
-                    officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <br>
+                <p>Hello, Iam Bollu <b>Sathwik</b> Reddy, currently persuing Btech final year in the department of
+                    <b>Computer Science and Engineering</b> at <b>IIT Ropar</b>, Punjab, India.
+                <p>Iam actively looking for job opportunities as Junior Software Developer. Head over to <a
+                        href="#contact">Contact</a> section to connect with me.</p>
+                </p>
+                <hr style="border-top: dotted 2px;" />
+                <h2>Work Experience</h2>
+
+                <h3>Software Engineer Intern(May 2021- July 2021) - Asanify Technologies Pvt Ltd</h3>
+                <ul>
+                    <li>Asanify is a HRMS company, develops softwares/website for companies to manage HR related
+                        functionalities like Hiring, Payslips etc. </li>
+                    <li>I added functionality to login into the portal using OTP. Worked with tools like <b>Vue.js</b>
+                        for the front end, <b>Python-Flask</b> for the backend and <b>AWS-Lambdas, AWS-userpools</b> for
+                        generating and verifying OTP and generating id tokens. </li>
+                    <li>I also worked on tool using which companies can create their own public page which has basic
+                        info about company, also show any job postings. Admins of the company can do this with 0 coding
+                        knowledge in less than 10 minutes. </li>
+                    <li>Admins can also customize their company's public page. They can change colours and fonts of
+                        their public page. </li>
+                    <li> Admins can create and publish jobs on to their public page. They can even edit job after
+                        posting. Please click <a href="https://secure.asanify.com/public/company/companydemo/"
+                            target="_blank">
+                            here
+                        </a> for a demo of final product</li>
+                    <li>I also added a functionality using <b>Linkedin API</b>, where admin can share info about job on
+                        his
+                        linkedin account by giving access to his linkedin.</li>
+                </ul>
+                <hr style="border-top: dotted 2px;" />
+                <p>I have done several projects in software domain. Head over to <a href="#projects">Projects</a>
+                    section or have a look at my <a href="https://github.com/sathwik-r/" target="_blank">Github</a>
+                    repositories to see
+                    them. </p>
+                <hr>
+                <a id="projects">
+                    <h1>Projects</h1>
+                </a>
+                <hr>
                 <a id="contact">
                     <h1>Contact</h1>
-                    <a href="https://www.linkedin.com/in/sathwik-reddy-bollu-906a13176/" target="_blank"> <img
-                            src="assets/linkedin.png" style="width:60px;height: 50px"></a>&nbsp;&nbsp;
-                    <a href="mailto:2018csb1081@iitrpr.ac.in,sathwikbollu@gmail.com?body=Via Personal website"
-                        target="_blank"><img src="assets/gmail.png" style="width:70px;height: 50px">
-                    </a>&nbsp;&nbsp;
-                    <a href="https://twitter.com/sathwikreddy__" target="_blank"> <img src="assets/twitter.png"
-                            style="width:50px;height: 50px"></a>&nbsp;&nbsp;
-                    <a href="https://wa.me/919676766259" target="_blank"><img src="assets/whatsapp.jpeg"
-                            style="width:50px;height: 50px"></a>
+                </a>
+                <br>
+                <a href="https://www.linkedin.com/in/sathwik-reddy-bollu-906a13176/" target="_blank"> <img
+                        src="assets/linkedin.png" style="width:60px;height: 50px"></a>&nbsp;&nbsp;
+                <a href="mailto:2018csb1081@iitrpr.ac.in,sathwikbollu@gmail.com?body=Via Personal website"
+                    target="_blank"><img src="assets/gmail.png" style="width:70px;height: 50px">
+                </a>&nbsp;&nbsp;
+                <a href="https://twitter.com/sathwikreddy__" target="_blank"> <img src="assets/twitter.png"
+                        style="width:50px;height: 50px"></a>&nbsp;&nbsp;
+                <a href="https://wa.me/919676766259" target="_blank"><img src="assets/whatsapp.jpeg"
+                        style="width:65px;height: 65px"></a>
                 </a>&nbsp;&nbsp;
                 <a href="https://www.facebook.com/sathwikreddy.bollu" target="_blank"><img src="assets/facebook.png"
                         style="width:50px;height: 50px"></a>&nbsp;&nbsp;
