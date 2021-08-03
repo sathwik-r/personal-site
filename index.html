@@ -32,16 +32,16 @@
         }
 
         p {
-            font-family: Lato;
+            font-family: 'Verdana';
             font-size: 18px;
         }
 
         h1 {
-            font-family: Monaco;
+            font-family: Helvetica;
         }
 
         h2 {
-            font-family: Monaco;
+            font-family: Helvetica;
             font-size: 24px;
             color: rgb(172, 129, 66);
         }
@@ -53,7 +53,7 @@
         }
 
         li {
-            font-family: Lato;
+            font-family: 'Verdana';
             margin: 10px 0;
             font-size: 18px;
         }
@@ -71,9 +71,21 @@
                 height: auto;
                 padding: 15px;
             }
-
+            .me_img{
+                height: 0;
+                width: 0;
+            }
+            .banner1{
+                
+                height: 50%;
+                width: 100%;
+                /* width:auto; */
+            }
             .row.content {
                 height: auto;
+            }
+            .mobile{
+                display: none;
             }
         }
     </style>
@@ -102,14 +114,14 @@
                 </ul>
 
             </div>
-            <img src="assets/banner.jpg" style="width:100%;height: 400px">
+            <img class="banner1" src="assets/banner.jpg" width="100%" height= "500">
         </div>
     </nav>
 
     <div class="container-fluid justify-center">
         <div class="row content">
             <div class="col-sm-2  d-sm-block ">
-                <img class="d-none d-sm-block" src="assets/me.jpeg" width="200" height="200">
+                <img class="me_img" src="assets/me2.jpg" width="200" height="200">
 
             </div>
             <br>
@@ -126,8 +138,11 @@
                         href="#contact">Contact</a> section to connect with me.</p>
                 </p>
                 <hr style="border-top: dotted 2px;" />
+                <h2>Strengths and Skills</h2>
+                <p><b>Programming Languages and Frame works: </b>C, C++, PostgreSQL, Python, Vue.js, Verilog(HDL), Flask, AWS</p>
+                <p><b>Relevant coursework: </b> AI, Software Engineering, Computer Networks, Theory of Computation, Fundamentals of Data Science, Database Management, Data Structures and Algorithms, Operating Systems, Computer Architecture.</p>
                 <h2>Work Experience</h2>
-
+                <hr style="border-top: dotted 2px;" />
                 <h3>Software Engineer Intern(May 2021- July 2021) - Asanify Technologies Pvt Ltd</h3>
                 <ul>
                     <li>Asanify is a HRMS company, develops softwares/website for companies to manage HR related
@@ -158,6 +173,26 @@
                 <a id="projects">
                     <h1>Projects</h1>
                 </a>
+                <h3>Enterprise Service Bus(Mar 2021 - May 2021)<sup><a href="https://github.com/sathwik-r/Enterprise-Service-Bus" target="_blank">[Github link]</a></sup></h3>
+                <ul>
+                    <li>Designed a ESB Handler using Python-Flask which acts as a communication medium between clients and applications(instagram api, weather api)</li>
+                    <li>Added support to handle requests(using client-server architecture) from multiple clients at the same time.</li>
+                </ul>
+                <hr style="border-top: dotted 2px;" />
+                <h3>Tetris AI Agent(Mar 2021 - May 2021)<sup><a href="https://github.com/sathwik-r/Tetris-AI-agent" target="_blank">[Github Link]</a></sup></h3>
+                <ul>
+                    <li>Designed an AI Agent which plays tetris game using a heuristic function on zero,one Wide-Combos to estimate most suitable position for incoming block.
+                    </li>
+                    <li>Here heuristic function assigns score to each possible move(all possible orientations of incoming block) considering factors like lines getting cleared, holes etc. I also compared results using different weights for all the factors to arrive at best set of weights </li>
+                </ul>
+                <hr style="border-top: dotted 2px;" />
+                <h3>Railway Reservation system(Oct 2020 - Nov 2020)<sup><a href="https://github.com/sathwik-r/Railway-Reservation-Sysytem" target="_blank">[Github Link]</a></sup></h3>
+               <ul>
+                   <li>{Designed a Railway ticket booking portal using PostgreSQL and JavaScript, to book tickets for AC or sleeper class for a train on a given date.</li>
+                    <li>Created stored procedures and triggers to check availability in a train, to book tickets and release trains for booking.</li>
+               </ul>
+               <hr style="border-top: dotted 2px;" />
+               <p>I have done few other projects also, headover to my  <a href="https://github.com/sathwik-r/" target="_blank">Github</a> account to view all.</p>
                 <hr>
                 <a id="contact">
                     <h1>Contact</h1>
@@ -173,9 +208,9 @@
                 <a href="https://wa.me/919676766259" target="_blank"><img src="assets/whatsapp.jpeg"
                         style="width:65px;height: 65px"></a>
                 </a>&nbsp;&nbsp;
-                <a href="https://www.facebook.com/sathwikreddy.bollu" target="_blank"><img src="assets/facebook.png"
+                <a class ="mobile" href="https://www.facebook.com/sathwikreddy.bollu" target="_blank"><img src="assets/facebook.png"
                         style="width:50px;height: 50px"></a>&nbsp;&nbsp;
-                <a href="https://www.instagram.com/sathwiik_reddy_/" target="_blank"><img src="assets/instagram.jpeg"
+                <a class ="mobile" href="https://www.instagram.com/sathwiik_reddy_/" target="_blank"><img src="assets/instagram.jpeg"
                         style="width:50px;height: 50px"></a>
 
             </div>
